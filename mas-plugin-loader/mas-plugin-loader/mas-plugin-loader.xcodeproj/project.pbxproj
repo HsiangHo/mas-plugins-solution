@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98D1F5001FDC27B400AD5ECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F4FF1FDC27B400AD5ECF /* AppDelegate.m */; };
+		98D1F5021FDC27B400AD5ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D1F5011FDC27B400AD5ECF /* Assets.xcassets */; };
+		98D1F5051FDC27B400AD5ECF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D1F5031FDC27B400AD5ECF /* MainMenu.xib */; };
+		98D1F5081FDC27B400AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5071FDC27B400AD5ECF /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98D1F4FB1FDC27B400AD5ECF /* mas-plugin-loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mas-plugin-loader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D1F4FE1FDC27B400AD5ECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98D1F4FF1FDC27B400AD5ECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98D1F5011FDC27B400AD5ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98D1F5041FDC27B400AD5ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		98D1F5061FDC27B400AD5ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D1F5071FDC27B400AD5ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98D1F5091FDC27B400AD5ECF /* mas_plugin_loader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mas_plugin_loader.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D1F4F81FDC27B400AD5ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98D1F4F21FDC27B400AD5ECF = {
+			isa = PBXGroup;
+			children = (
+				98D1F4FD1FDC27B400AD5ECF /* mas-plugin-loader */,
+				98D1F4FC1FDC27B400AD5ECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98D1F4FC1FDC27B400AD5ECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D1F4FB1FDC27B400AD5ECF /* mas-plugin-loader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D1F4FD1FDC27B400AD5ECF /* mas-plugin-loader */ = {
+			isa = PBXGroup;
+			children = (
+				98D1F4FE1FDC27B400AD5ECF /* AppDelegate.h */,
+				98D1F4FF1FDC27B400AD5ECF /* AppDelegate.m */,
+				98D1F5011FDC27B400AD5ECF /* Assets.xcassets */,
+				98D1F5031FDC27B400AD5ECF /* MainMenu.xib */,
+				98D1F5061FDC27B400AD5ECF /* Info.plist */,
+				98D1F5071FDC27B400AD5ECF /* main.m */,
+				98D1F5091FDC27B400AD5ECF /* mas_plugin_loader.entitlements */,
+			);
+			path = "mas-plugin-loader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D1F4FA1FDC27B400AD5ECF /* mas-plugin-loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D1F50C1FDC27B400AD5ECF /* Build configuration list for PBXNativeTarget "mas-plugin-loader" */;
+			buildPhases = (
+				98D1F4F71FDC27B400AD5ECF /* Sources */,
+				98D1F4F81FDC27B400AD5ECF /* Frameworks */,
+				98D1F4F91FDC27B400AD5ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mas-plugin-loader";
+			productName = "mas-plugin-loader";
+			productReference = 98D1F4FB1FDC27B400AD5ECF /* mas-plugin-loader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D1F4F31FDC27B400AD5ECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Jovi;
+				TargetAttributes = {
+					98D1F4FA1FDC27B400AD5ECF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 98D1F4F61FDC27B400AD5ECF /* Build configuration list for PBXProject "mas-plugin-loader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D1F4F21FDC27B400AD5ECF;
+			productRefGroup = 98D1F4FC1FDC27B400AD5ECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D1F4FA1FDC27B400AD5ECF /* mas-plugin-loader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D1F4F91FDC27B400AD5ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D1F5021FDC27B400AD5ECF /* Assets.xcassets in Resources */,
+				98D1F5051FDC27B400AD5ECF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D1F4F71FDC27B400AD5ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D1F5081FDC27B400AD5ECF /* main.m in Sources */,
+				98D1F5001FDC27B400AD5ECF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98D1F5031FDC27B400AD5ECF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D1F5041FDC27B400AD5ECF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98D1F50A1FDC27B400AD5ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		98D1F50B1FDC27B400AD5ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		98D1F50D1FDC27B400AD5ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mas-plugin-loader/mas_plugin_loader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mas-plugin-loader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.mas-plugin-loader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98D1F50E1FDC27B400AD5ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mas-plugin-loader/mas_plugin_loader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mas-plugin-loader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.mas-plugin-loader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D1F4F61FDC27B400AD5ECF /* Build configuration list for PBXProject "mas-plugin-loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D1F50A1FDC27B400AD5ECF /* Debug */,
+				98D1F50B1FDC27B400AD5ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D1F50C1FDC27B400AD5ECF /* Build configuration list for PBXNativeTarget "mas-plugin-loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D1F50D1FDC27B400AD5ECF /* Debug */,
+				98D1F50E1FDC27B400AD5ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D1F4F31FDC27B400AD5ECF /* Project object */;
+}
