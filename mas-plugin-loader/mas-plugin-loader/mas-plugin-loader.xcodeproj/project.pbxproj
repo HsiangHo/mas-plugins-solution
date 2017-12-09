@@ -11,6 +11,7 @@
 		98D1F5021FDC27B400AD5ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D1F5011FDC27B400AD5ECF /* Assets.xcassets */; };
 		98D1F5051FDC27B400AD5ECF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D1F5031FDC27B400AD5ECF /* MainMenu.xib */; };
 		98D1F5081FDC27B400AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5071FDC27B400AD5ECF /* main.m */; };
+		98D1F5111FDC2C2A00AD5ECF /* RunScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F50F1FDC2C2900AD5ECF /* RunScript.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		98D1F5041FDC27B400AD5ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		98D1F5061FDC27B400AD5ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D1F5071FDC27B400AD5ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		98D1F5091FDC27B400AD5ECF /* mas_plugin_loader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mas_plugin_loader.entitlements; sourceTree = "<group>"; };
+		98D1F50F1FDC2C2900AD5ECF /* RunScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunScript.m; sourceTree = "<group>"; };
+		98D1F5101FDC2C2A00AD5ECF /* RunScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunScript.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,12 @@
 			children = (
 				98D1F4FE1FDC27B400AD5ECF /* AppDelegate.h */,
 				98D1F4FF1FDC27B400AD5ECF /* AppDelegate.m */,
+				98D1F5101FDC2C2A00AD5ECF /* RunScript.h */,
+				98D1F50F1FDC2C2900AD5ECF /* RunScript.m */,
 				98D1F5011FDC27B400AD5ECF /* Assets.xcassets */,
 				98D1F5031FDC27B400AD5ECF /* MainMenu.xib */,
 				98D1F5061FDC27B400AD5ECF /* Info.plist */,
 				98D1F5071FDC27B400AD5ECF /* main.m */,
-				98D1F5091FDC27B400AD5ECF /* mas_plugin_loader.entitlements */,
 			);
 			path = "mas-plugin-loader";
 			sourceTree = "<group>";
@@ -97,6 +100,11 @@
 					98D1F4FA1FDC27B400AD5ECF = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D1F5111FDC2C2A00AD5ECF /* RunScript.m in Sources */,
 				98D1F5081FDC27B400AD5ECF /* main.m in Sources */,
 				98D1F5001FDC27B400AD5ECF /* AppDelegate.m in Sources */,
 			);
@@ -261,11 +270,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "mas-plugin-loader/mas_plugin_loader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
 				INFOPLIST_FILE = "mas-plugin-loader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.mas-plugin-loader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -275,11 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "mas-plugin-loader/mas_plugin_loader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
 				INFOPLIST_FILE = "mas-plugin-loader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HyperartFlow.mas-plugin-loader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

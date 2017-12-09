@@ -7,7 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RunScript.h"
 
 int main(int argc, const char * argv[]) {
-    return NSApplicationMain(argc, argv);
+    if (3 != argc) {
+        return -1;
+    }
+    const char *pszExec = argv[1];
+    int bRootFlag = atoi(argv[2]);
+    
+    NSString *strExec = [[[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent]stringByAppendingString:[NSString stringWithFormat:@"/%s",pszExec]];
+    
+    if(bRootFlag){
+        [RunScript RunTool:strExec];
+    }else{
+        [[NSWorkspace sharedWorkspace] launchApplication:strExec];
+    }
+    return 0;
 }
