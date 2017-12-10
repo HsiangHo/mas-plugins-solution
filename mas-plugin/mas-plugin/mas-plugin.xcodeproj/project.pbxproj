@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F51E1FDD3A9D00AD5ECF /* main.m */; };
 		98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
+		98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		98D1F51E1FDD3A9D00AD5ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98D1F5261FDD40B800AD5ECF /* MPAESCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAESCryptor.h; sourceTree = "<group>"; };
 		98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAESCryptor.m; sourceTree = "<group>"; };
+		98D1F52A1FDD4B7700AD5ECF /* MPPackageWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPackageWrapper.h; sourceTree = "<group>"; };
+		98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPackageWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 		98D1F5121FDD3A9D00AD5ECF = {
 			isa = PBXGroup;
 			children = (
+				98D1F5291FDD4A1500AD5ECF /* package_wrapper */,
 				98D1F5251FDD3AB200AD5ECF /* algorithm */,
 				98D1F51D1FDD3A9D00AD5ECF /* mas-plugin */,
 				98D1F51C1FDD3A9D00AD5ECF /* Products */,
@@ -73,6 +77,15 @@
 				98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */,
 			);
 			path = algorithm;
+			sourceTree = "<group>";
+		};
+		98D1F5291FDD4A1500AD5ECF /* package_wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				98D1F52A1FDD4B7700AD5ECF /* MPPackageWrapper.h */,
+				98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */,
+			);
+			path = package_wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */,
+				98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */,
 				98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
