@@ -10,6 +10,7 @@
 		98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F51E1FDD3A9D00AD5ECF /* main.m */; };
 		98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
+		98D1F5301FDD96B100AD5ECF /* MPPluginObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAESCryptor.m; sourceTree = "<group>"; };
 		98D1F52A1FDD4B7700AD5ECF /* MPPackageWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPackageWrapper.h; sourceTree = "<group>"; };
 		98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPackageWrapper.m; sourceTree = "<group>"; };
+		98D1F52E1FDD96B100AD5ECF /* MPPluginObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPluginObject.h; sourceTree = "<group>"; };
+		98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPluginObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 		98D1F51D1FDD3A9D00AD5ECF /* mas-plugin */ = {
 			isa = PBXGroup;
 			children = (
+				98D1F52E1FDD96B100AD5ECF /* MPPluginObject.h */,
+				98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */,
 				98D1F51E1FDD3A9D00AD5ECF /* main.m */,
 			);
 			path = "mas-plugin";
@@ -147,6 +152,7 @@
 			files = (
 				98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */,
 				98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */,
+				98D1F5301FDD96B100AD5ECF /* MPPluginObject.m in Sources */,
 				98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
