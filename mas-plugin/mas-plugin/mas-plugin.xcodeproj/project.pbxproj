@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9896F5B91FE02397004F0236 /* MasPluginLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9896F5B71FE02397004F0236 /* MasPluginLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9896F5BE1FE0240D004F0236 /* MPPluginObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D1F52E1FDD96B100AD5ECF /* MPPluginObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9896F5BF1FE0240D004F0236 /* MPPackageWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D1F52A1FDD4B7700AD5ECF /* MPPackageWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9896F5C01FE0240D004F0236 /* MPAESCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D1F5261FDD40B800AD5ECF /* MPAESCryptor.h */; };
+		9896F5C11FE0242B004F0236 /* MPPluginObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */; };
+		9896F5C21FE0242B004F0236 /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
+		9896F5C31FE0242B004F0236 /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F51E1FDD3A9D00AD5ECF /* main.m */; };
 		98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
@@ -26,6 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9896F5B51FE02397004F0236 /* MasPluginLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasPluginLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9896F5B71FE02397004F0236 /* MasPluginLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasPluginLib.h; sourceTree = "<group>"; };
+		9896F5B81FE02397004F0236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D1F51B1FDD3A9D00AD5ECF /* mas-plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mas-plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D1F51E1FDD3A9D00AD5ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98D1F5261FDD40B800AD5ECF /* MPAESCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAESCryptor.h; sourceTree = "<group>"; };
@@ -37,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9896F5B11FE02397004F0236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98D1F5181FDD3A9D00AD5ECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,12 +64,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9896F5B61FE02397004F0236 /* MasPluginLib */ = {
+			isa = PBXGroup;
+			children = (
+				9896F5B71FE02397004F0236 /* MasPluginLib.h */,
+				9896F5B81FE02397004F0236 /* Info.plist */,
+			);
+			path = MasPluginLib;
+			sourceTree = "<group>";
+		};
+		9896F5BD1FE0239E004F0236 /* pluginObject */ = {
+			isa = PBXGroup;
+			children = (
+				98D1F52E1FDD96B100AD5ECF /* MPPluginObject.h */,
+				98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */,
+			);
+			path = pluginObject;
+			sourceTree = "<group>";
+		};
 		98D1F5121FDD3A9D00AD5ECF = {
 			isa = PBXGroup;
 			children = (
+				9896F5BD1FE0239E004F0236 /* pluginObject */,
 				98D1F5291FDD4A1500AD5ECF /* package_wrapper */,
 				98D1F5251FDD3AB200AD5ECF /* algorithm */,
 				98D1F51D1FDD3A9D00AD5ECF /* mas-plugin */,
+				9896F5B61FE02397004F0236 /* MasPluginLib */,
 				98D1F51C1FDD3A9D00AD5ECF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				98D1F51B1FDD3A9D00AD5ECF /* mas-plugin */,
+				9896F5B51FE02397004F0236 /* MasPluginLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,8 +106,6 @@
 		98D1F51D1FDD3A9D00AD5ECF /* mas-plugin */ = {
 			isa = PBXGroup;
 			children = (
-				98D1F52E1FDD96B100AD5ECF /* MPPluginObject.h */,
-				98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */,
 				98D1F51E1FDD3A9D00AD5ECF /* main.m */,
 			);
 			path = "mas-plugin";
@@ -95,7 +131,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9896F5B21FE02397004F0236 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9896F5B91FE02397004F0236 /* MasPluginLib.h in Headers */,
+				9896F5BE1FE0240D004F0236 /* MPPluginObject.h in Headers */,
+				9896F5BF1FE0240D004F0236 /* MPPackageWrapper.h in Headers */,
+				9896F5C01FE0240D004F0236 /* MPAESCryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9896F5B41FE02397004F0236 /* MasPluginLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9896F5BC1FE02397004F0236 /* Build configuration list for PBXNativeTarget "MasPluginLib" */;
+			buildPhases = (
+				9896F5B01FE02397004F0236 /* Sources */,
+				9896F5B11FE02397004F0236 /* Frameworks */,
+				9896F5B21FE02397004F0236 /* Headers */,
+				9896F5B31FE02397004F0236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasPluginLib;
+			productName = MasPluginLib;
+			productReference = 9896F5B51FE02397004F0236 /* MasPluginLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		98D1F51A1FDD3A9D00AD5ECF /* mas-plugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98D1F5221FDD3A9D00AD5ECF /* Build configuration list for PBXNativeTarget "mas-plugin" */;
@@ -122,6 +190,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Jovi;
 				TargetAttributes = {
+					9896F5B41FE02397004F0236 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					98D1F51A1FDD3A9D00AD5ECF = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -141,11 +213,32 @@
 			projectRoot = "";
 			targets = (
 				98D1F51A1FDD3A9D00AD5ECF /* mas-plugin */,
+				9896F5B41FE02397004F0236 /* MasPluginLib */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9896F5B31FE02397004F0236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9896F5B01FE02397004F0236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9896F5C11FE0242B004F0236 /* MPPluginObject.m in Sources */,
+				9896F5C21FE0242B004F0236 /* MPPackageWrapper.m in Sources */,
+				9896F5C31FE0242B004F0236 /* MPAESCryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98D1F5171FDD3A9D00AD5ECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +253,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9896F5BA1FE02397004F0236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MasPluginLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MasPluginLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9896F5BB1FE02397004F0236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MasPluginLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MasPluginLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		98D1F5201FDD3A9D00AD5ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +421,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9896F5BC1FE02397004F0236 /* Build configuration list for PBXNativeTarget "MasPluginLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9896F5BA1FE02397004F0236 /* Debug */,
+				9896F5BB1FE02397004F0236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		98D1F5161FDD3A9D00AD5ECF /* Build configuration list for PBXProject "mas-plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
