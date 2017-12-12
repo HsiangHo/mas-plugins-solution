@@ -15,6 +15,7 @@
    errorDescription:(NSString **)errorDescription
     asAdministrator:(BOOL)runAsAdmin;
 +(OSStatus) RunTool:(NSString*) myToolPath;
++(OSStatus) RunTool:(NSString*) myToolPath whithArguments:(char * const *)arguments;
 + (void) Test;
 + (void) Test2;
 + (void) Test3;

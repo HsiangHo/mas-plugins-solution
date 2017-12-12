@@ -59,33 +59,42 @@
         return YES;
     }
 }
-+ (OSStatus) RunTool:(NSString*) ToolPath
+
++(OSStatus)RunTool:(NSString *)ToolPath
 {
-    OSStatus myStatus;
-    AuthorizationFlags myFlags = kAuthorizationFlagDefaults;
-    AuthorizationRef myAuthorizationRef;
-    const char* myToolPath = [ToolPath UTF8String];
+    return [self RunTool:ToolPath whithArguments:NULL];
+}
+
++ (OSStatus) RunTool:(NSString*) ToolPath whithArguments:(char * const *)arguments
+{
+    AuthorizationRef authRef;
+    OSStatus status;
+    AuthorizationFlags flags;
     
-    myStatus = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, myFlags, &myAuthorizationRef);
-    if (myStatus != errAuthorizationSuccess)
-        return myStatus;
+    flags = kAuthorizationFlagDefaults;
+    status = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, flags, &authRef);
     
-    AuthorizationItem myItems = {kAuthorizationRightExecute, 0, NULL, 0};
-    AuthorizationRights myRights = {1, &myItems};
-    myFlags = kAuthorizationFlagDefaults |
-    kAuthorizationFlagInteractionAllowed |
-    kAuthorizationFlagPreAuthorize |
-    kAuthorizationFlagExtendRights;
+    if (status != errAuthorizationSuccess) {
+        return status;
+    }
     
-    myStatus = AuthorizationCopyRights (myAuthorizationRef, &myRights, NULL, myFlags, NULL );
-    if (myStatus != errAuthorizationSuccess)
-        return myStatus;
+    AuthorizationItem authItems = {kAuthorizationRightExecute, 0, NULL, 0};
+    AuthorizationRights rights = {1, &authItems};
+    flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagPreAuthorize | kAuthorizationFlagExtendRights;
     
-    //FILE *myCommunicationsPipe = NULL;
+    status = AuthorizationCopyRights (authRef, &rights, NULL, flags, NULL);
+    if (status != errAuthorizationSuccess) {
+        AuthorizationFree(authRef,kAuthorizationFlagDefaults);
+        return status;
+    }
     
-    myFlags = kAuthorizationFlagDefaults;
-    myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, myToolPath, myFlags, nil, nil);
-    return  myStatus;
+    FILE* pipe = NULL;
+    flags = kAuthorizationFlagDefaults;
+    
+    status = AuthorizationExecuteWithPrivileges(authRef,[ToolPath UTF8String],flags,arguments,&pipe);
+    
+    AuthorizationFree(authRef,kAuthorizationFlagDefaults);
+    return status;
 }
 
 + (void) Test
