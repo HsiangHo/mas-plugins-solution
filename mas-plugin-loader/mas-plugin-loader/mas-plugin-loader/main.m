@@ -10,18 +10,31 @@
 #import "RunScript.h"
 
 int main(int argc, const char * argv[]) {
-    if (3 != argc) {
+    if (3 > argc) {
         return -1;
     }
     const char *pszExec = argv[1];
     int bRootFlag = atoi(argv[2]);
+    const char **p = NULL;
+    if (argc > 3) {
+        p = &argv[3];
+    }
     
-    NSString *strExec = [[[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent]stringByAppendingString:[NSString stringWithFormat:@"/%s",pszExec]];
+    NSString *strExec = [NSString stringWithFormat:@"%s",pszExec];
     
     if(bRootFlag){
-        [RunScript RunTool:strExec];
+        [RunScript RunTool:strExec whithArguments:(char * const *)p];
     }else{
-        [[NSWorkspace sharedWorkspace] launchApplication:strExec];
+        if (NULL == p) {
+            [[NSWorkspace sharedWorkspace] launchApplication:strExec];
+        }else{
+            int nIndex = 3;
+            NSMutableArray *arg = [[NSMutableArray alloc] init];
+            do{
+                [arg addObject:[NSString stringWithFormat:@"%s", argv[nIndex++]]];
+            }while (nIndex < argc);
+            [[NSWorkspace sharedWorkspace] launchApplicationAtURL:[NSURL fileURLWithPath:strExec] options:NSWorkspaceLaunchDefault configuration:[NSDictionary dictionaryWithObject:arg forKey:NSWorkspaceLaunchConfigurationArguments] error:nil];
+        }
     }
     return 0;
 }
