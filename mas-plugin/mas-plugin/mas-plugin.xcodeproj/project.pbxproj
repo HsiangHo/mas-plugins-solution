@@ -14,6 +14,7 @@
 		9896F5C11FE0242B004F0236 /* MPPluginObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52F1FDD96B100AD5ECF /* MPPluginObject.m */; };
 		9896F5C21FE0242B004F0236 /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
 		9896F5C31FE0242B004F0236 /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
+		9896F6501FE180EE004F0236 /* MPFileAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9896F64F1FE180EE004F0236 /* MPFileAccess.m */; };
 		98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F51E1FDD3A9D00AD5ECF /* main.m */; };
 		98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
@@ -36,6 +37,8 @@
 		9896F5B51FE02397004F0236 /* MasPluginLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MasPluginLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9896F5B71FE02397004F0236 /* MasPluginLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasPluginLib.h; sourceTree = "<group>"; };
 		9896F5B81FE02397004F0236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9896F64E1FE180EE004F0236 /* MPFileAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPFileAccess.h; sourceTree = "<group>"; };
+		9896F64F1FE180EE004F0236 /* MPFileAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFileAccess.m; sourceTree = "<group>"; };
 		98D1F51B1FDD3A9D00AD5ECF /* mas-plugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mas-plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D1F51E1FDD3A9D00AD5ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98D1F5261FDD40B800AD5ECF /* MPAESCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAESCryptor.h; sourceTree = "<group>"; };
@@ -82,9 +85,19 @@
 			path = pluginObject;
 			sourceTree = "<group>";
 		};
+		9896F64D1FE180BF004F0236 /* fileAccess */ = {
+			isa = PBXGroup;
+			children = (
+				9896F64E1FE180EE004F0236 /* MPFileAccess.h */,
+				9896F64F1FE180EE004F0236 /* MPFileAccess.m */,
+			);
+			path = fileAccess;
+			sourceTree = "<group>";
+		};
 		98D1F5121FDD3A9D00AD5ECF = {
 			isa = PBXGroup;
 			children = (
+				9896F64D1FE180BF004F0236 /* fileAccess */,
 				9896F5BD1FE0239E004F0236 /* pluginObject */,
 				98D1F5291FDD4A1500AD5ECF /* package_wrapper */,
 				98D1F5251FDD3AB200AD5ECF /* algorithm */,
@@ -245,6 +258,7 @@
 			files = (
 				98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */,
 				98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */,
+				9896F6501FE180EE004F0236 /* MPFileAccess.m in Sources */,
 				98D1F5301FDD96B100AD5ECF /* MPPluginObject.m in Sources */,
 				98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */,
 			);
