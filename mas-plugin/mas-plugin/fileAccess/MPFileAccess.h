@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^MPFileAccessBlock)();
+typedef void (^MPFileAccessBlock)(void);
 
 @interface MPFileAccess : NSObject
 

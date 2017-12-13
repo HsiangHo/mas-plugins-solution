@@ -63,7 +63,7 @@
     do{
         if(persist){
             //gain scope
-            if ([AppSandboxFileAccess persistAccessFilePath:path withBlock:block]) {
+            if ([MPFileAccess persistAccessFilePath:path withBlock:block]) {
                 break;
             }
         }else{

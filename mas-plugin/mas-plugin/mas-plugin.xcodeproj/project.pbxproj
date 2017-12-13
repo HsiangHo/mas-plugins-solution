@@ -15,6 +15,7 @@
 		9896F5C21FE0242B004F0236 /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
 		9896F5C31FE0242B004F0236 /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		9896F6501FE180EE004F0236 /* MPFileAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9896F64F1FE180EE004F0236 /* MPFileAccess.m */; };
+		9896F6511FE18984004F0236 /* MPFileAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9896F64F1FE180EE004F0236 /* MPFileAccess.m */; };
 		98D1F51F1FDD3A9D00AD5ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F51E1FDD3A9D00AD5ECF /* main.m */; };
 		98D1F5281FDD40B800AD5ECF /* MPAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F5271FDD40B800AD5ECF /* MPAESCryptor.m */; };
 		98D1F52C1FDD4B7700AD5ECF /* MPPackageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D1F52B1FDD4B7700AD5ECF /* MPPackageWrapper.m */; };
@@ -246,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9896F6511FE18984004F0236 /* MPFileAccess.m in Sources */,
 				9896F5C11FE0242B004F0236 /* MPPluginObject.m in Sources */,
 				9896F5C21FE0242B004F0236 /* MPPackageWrapper.m in Sources */,
 				9896F5C31FE0242B004F0236 /* MPAESCryptor.m in Sources */,
@@ -282,6 +284,7 @@
 				INFOPLIST_FILE = MasPluginLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MasPluginLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -305,6 +308,7 @@
 				INFOPLIST_FILE = MasPluginLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MasPluginLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
