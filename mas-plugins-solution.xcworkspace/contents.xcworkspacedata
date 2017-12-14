@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:mas-plugin-demo/mas-plugin-demo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:mas-plugin/mas-plugin/mas-plugin.xcodeproj">
    </FileRef>
    <FileRef
