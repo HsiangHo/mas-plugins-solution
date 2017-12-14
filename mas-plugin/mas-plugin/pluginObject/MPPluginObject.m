@@ -56,7 +56,7 @@
 }
 
 -(void)launchExec:(NSString *)execPath withArgument:(NSArray *)arguments withPrivilege:(BOOL)bFlag{
-     [_fileAccess accessFilePath:[NSURL URLWithString:@"file:///"] persistPermission:YES withBlock:^{
+    [_fileAccess accessFilePath:[NSURL URLWithString:@"file:///"] persistPermission:YES withBlock:^{
         NSString *execRealPath = [_tmpDir stringByAppendingString:execPath];
         NSURL *urlLoader = [NSURL fileURLWithPath:_loaderPath];
         NSMutableArray *arg = [[NSMutableArray alloc] init];
@@ -65,8 +65,13 @@
         if (nil != arguments) {
             [arg addObjectsFromArray:arguments];
         }
+        NSPasteboard *pboard = [NSPasteboard pasteboardWithName:@"mas-plugin-pasteBoard"];
+        [pboard clearContents];
+        [pboard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+        [pboard setPropertyList:arg forType:NSStringPboardType];
+
         [[NSWorkspace sharedWorkspace] launchApplicationAtURL:urlLoader options:NSWorkspaceLaunchDefault configuration:[NSDictionary dictionaryWithObject:arg forKey:NSWorkspaceLaunchConfigurationArguments] error:nil];
-     }];
+    }];
 }
 
 -(void)setLoaderPath:(NSString *)loaderPath{
