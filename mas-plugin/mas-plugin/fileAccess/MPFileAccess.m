@@ -60,6 +60,10 @@
     if(nil == path){
         return NO;
     }
+    if (0 == access([[path path] UTF8String], R_OK ) || 0 == access([[path path] UTF8String], R_OK )) {
+        block();
+        return YES;
+    }
     do{
         if(persist){
             //gain scope
