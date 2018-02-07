@@ -78,4 +78,8 @@
     _loaderPath = [_tmpDir stringByAppendingString:loaderPath];
 }
 
+-(NSString *)tmpDir{
+    return _tmpDir;
+}
+
 @end

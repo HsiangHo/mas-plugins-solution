@@ -16,5 +16,6 @@
 -(BOOL)loadPlugin;
 -(void)unloadPlugin;
 -(void)launchExec:(NSString *)execPath withArgument:(NSArray *)arguments withPrivilege:(BOOL)bFlag;
+-(NSString *)tmpDir;
 
 @end
