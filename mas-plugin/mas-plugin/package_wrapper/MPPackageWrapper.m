@@ -17,7 +17,7 @@
     }
     //pack
     NSString *tmpPath = [[outPath stringByDeletingLastPathComponent] stringByAppendingString:[NSString stringWithFormat:@"/tmp_E_%ld.zip",time(NULL)]];
-    NSString *command = [NSString stringWithFormat:@"cd '%@';zip -q -r -X '%@' folder '%@'",[dirPath stringByDeletingLastPathComponent],tmpPath,[dirPath lastPathComponent]];
+    NSString *command = [NSString stringWithFormat:@"cd '%@';zip -q -ry -X '%@' folder '%@'",[dirPath stringByDeletingLastPathComponent],tmpPath,[dirPath lastPathComponent]];
     system([command UTF8String]);
     
     //encrypt
