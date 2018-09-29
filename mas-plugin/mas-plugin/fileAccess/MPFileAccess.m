@@ -60,7 +60,8 @@
     if(nil == path){
         return NO;
     }
-    if (0 == access([[path path] UTF8String], R_OK ) || 0 == access([[path path] UTF8String], R_OK )) {
+    NSDictionary *dict = [[NSProcessInfo processInfo] environment];
+    if (nil == [dict objectForKey:@"APP_SANDBOX_CONTAINER_ID"]) {
         block();
         return YES;
     }
